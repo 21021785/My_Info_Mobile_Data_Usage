@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     ListView lvMobileData;
     AsyncHttpClient client;
-    ArrayAdapter<MobileData> aaMobileData;
+    //ArrayAdapter<MobileData> aaMobileData;
+    CustomAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,16 +60,15 @@ public class MainActivity extends AppCompatActivity {
                         MobileData mobileData = new MobileData(quarter, volume);
                         alMobileData.add(mobileData);
                     }
-                    Log.d("junittest", alMobileData.size() + "");
                 }
                 catch(JSONException e){
 
                 }
-                aaMobileData = new ArrayAdapter(MainActivity.this, android.R.layout.simple_list_item_1, alMobileData);
-                lvMobileData.setAdapter(aaMobileData);
+                adapter = new CustomAdapter(MainActivity.this, R.layout.row, alMobileData);
+                lvMobileData.setAdapter(adapter);
             }
 
-            @Override
+            /*@Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 super.onSuccess(statusCode, headers, response);
                 Log.d("onsuccess", "onSuccess2");
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 super.onFailure(statusCode, headers, responseString, throwable);
                 Log.d("fail", "fail13");
-            }
+            }*/
         });
     }
 }

@@ -41,7 +41,9 @@ public class CustomAdapter extends ArrayAdapter {
 
         // Set values to the TextView to display the corresponding information
         tvQuarter.setText(currentVersion.getQuarter());
-        tvVolume.setText(currentVersion.getVolume());
+        double currentVersionDouble = Double.parseDouble(currentVersion.getVolume());
+        double newCurrentVersionDouble = currentVersionDouble * 1000;
+        tvVolume.setText(String.format("%.3f Terabytes", newCurrentVersionDouble));
 
         return rowView;
     }

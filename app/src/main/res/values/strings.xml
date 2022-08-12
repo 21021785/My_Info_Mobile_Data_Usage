@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">My_Info_Mobile_Data_Usage</string>
     <string-array name="spinnerItems">
+        <item>All Years</item>
         <item>2004</item>
         <item>2005</item>
         <item>2006</item>

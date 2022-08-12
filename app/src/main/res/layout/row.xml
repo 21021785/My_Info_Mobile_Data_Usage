@@ -18,7 +18,7 @@
             android:paddingTop="5dp"
             android:paddingRight="5dp"
             android:text="Year: "
-            android:textColor="#FFE600"
+            android:textColor="#560ADC"
             android:textSize="28dp" />
 
         <TextView
@@ -30,7 +30,7 @@
             android:paddingTop="5dp"
             android:text="TextView"
             android:paddingLeft="5dp"
-            android:textColor="#FFE600"
+            android:textColor="#FF560ADC"
             android:layout_weight="1"
             android:textSize="28dp" />
     </LinearLayout>
@@ -50,7 +50,7 @@
             android:paddingRight="5dp"
             android:paddingBottom="5dp"
             android:text="Volume:"
-            android:textColor="#FFE607"
+            android:textColor="#FF560ADC"
             android:textSize="20dp" />
 
         <TextView
@@ -62,7 +62,7 @@
             android:paddingBottom="5dp"
             android:paddingLeft="5dp"
             android:text="TextView"
-            android:textColor="#FFE607"
+            android:textColor="#FF560ADC"
             android:layout_weight="1"
             android:textSize="20dp" />
     </LinearLayout>
